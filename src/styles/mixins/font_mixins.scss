@@ -1,0 +1,95 @@
+@mixin header-font {
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+@mixin HotTripsTitle {
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+@mixin HotTripsSpan {
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+@mixin ForestTitleFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+@mixin EmbarkSpan {
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+  } 
+
+@mixin EmbarkFont {
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+@mixin MenuFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+@mixin MenuUseFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+
+@mixin ViewAllFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 20.4px;
+    text-align: left;
+  }
+
+@mixin SeoFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+  }
+
+  @mixin JaneCooperFont {
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @mixin InformationFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+
+
+
+
+

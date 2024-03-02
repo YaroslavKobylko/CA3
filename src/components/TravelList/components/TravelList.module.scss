@@ -1,0 +1,224 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.ContinentContainer{
+  display: flex;
+  align-items: center;
+}
+
+.continentButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .MenuContainer {
+    .selected {
+      @include MenuUseFont;
+      font-weight: bold;
+      font-size: 24px;
+      color: $page-color;
+    }
+  }
+
+  .RegionContainer{
+    width: 1332px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -220px;
+    height: 2px;
+    background-color: $page-color;
+    width: 100%;
+    min-width: 32px;
+  }
+
+  .MenuContainer{
+    width: 484px;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .TravelListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 182px;
+  }
+
+  .MenuContainer button{
+    background: transparent;
+    border: none;
+    color: $black-color;
+    font-size: 20px;
+    @include MenuFont;
+    padding: 0px;
+  }
+
+  .ContinentContainer{
+    width: 1380px;
+    height: 882px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  
+  .RegionContainer h2{
+    width: 104px;
+    height: 35px;
+    color: $page-color;
+    @include ForestTitleFont;
+    font-size: 29px;
+    margin: 0;
+  }
+
+  .ViewAllContainer{
+    width: 65px;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .ViewAllContainer a{
+    width: 65px;
+    height: 20px;
+    color: $page-color;
+    @include ViewAllFont;
+    font-size: 17px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .CityContainer {
+    width: 1380px;
+    height: 830px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px 8px;
+    margin-top: 28px;
+  }
+
+  .City{
+    width: 339px;
+    height:409px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: $white-color;
+    box-shadow: 0px 0px 15px 0px rgba(15, 78, 70, 0.1);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CityContent{
+    width: 299px;
+    height:349px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .TopPart{
+    width:299px;
+    height:65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .CityName{
+    height: 36px;
+    font-size: 24px;
+    @include MenuUseFont;
+    margin: 0;
+  }
+
+  .DateContainer{
+    height: 21px;
+    display: flex;
+    align-items: center;
+  }
+
+  .CityDate{
+    height: 14px;
+    @include ViewAllFont;
+    font-size:14px;
+    color: $gray-color;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+  }
+
+  .BottomPart{
+    width: 299px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .PriceContainer{
+    width:88px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .PriceText{
+    height: 24px;
+    @include header-font;
+    font-size:16px;
+    color: $gray-color;
+    margin: 0px;
+  }
+  
+  .Price{
+    height: 36px;
+    @include MenuUseFont;
+    font-size: 24px;
+    color: $black-color;
+    margin: 0px;
+  }
+
+  .ViewContainer{
+    width: 127px;
+    height: 64px;
+    display:flex;
+    align-items: flex-end;
+  }
+
+  .ViewDetails{
+    width: 127px;
+    height: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid;
+    color: $page-color;
+  }
+
+  .ViewDetails a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87px;
+    height: 21px;
+    color: $page-color;
+    font-size: 14px;
+    @include ViewAllFont;
+  }

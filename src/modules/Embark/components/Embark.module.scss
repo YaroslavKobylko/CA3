@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.EmbarkContainer{
+    display: flex;
+    height: 114px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.Embark{
+    width: 1111px;
+    height: 114px;
+    text-align: center;
+}
+
+.Embark h2{
+    margin: 0px;
+    @include EmbarkFont;
+    font-size: 28px;
+    color: $black-color;
+}
+
+.EmbarkSpan{
+    margin: 0px;
+    @include EmbarkSpan;
+    font-size: 38px;
+    color: $black-color;
+}
+

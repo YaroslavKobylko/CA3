@@ -1,0 +1,122 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuoteContainer{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 1262px;
+    height: 346px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 0px rgba(39, 149, 158, 0.1);
+}
+
+.ContentContainer{
+    width: 1062px;
+    height: 246px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Quote{
+    width: 1062px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quotesleft{
+    width: 1062px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.QuoteImageTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 132px;
+}
+
+.quotesright{
+    width: 1062px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.QuoteImageBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 132px;
+}
+
+.QuoteTextContainer{
+    height: 108px;
+    width: 1062px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuoteText{
+    height: 108px;
+    width: 1029px;
+}
+
+.QuoteText p{
+    font-size: 17px;
+    color: $black-color;
+    @include ViewAllFont;
+    text-align: center;
+    margin: 0;
+}
+
+.QuoteSpan{
+    font-size: 24px;
+    color: $page-color;
+    @include MenuUseFont;
+    text-align: center;
+}
+
+.AuthorContainer{
+    height: 74px;
+    width: 1062px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.Author{
+    height: 54px;
+    width: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Author p{
+    font-size: 24px;
+    color: $gray-color;
+    @include SeoFont;
+}
+
+.JaneCooper{
+    font-size: 35px;
+    color: $black-color;
+    @include JaneCooperFont;
+}

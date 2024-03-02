@@ -1,0 +1,49 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.hotTripsLogo{
+    width: 1260px;
+    height: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotTrip{
+    width: 400px;
+    height: 490px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.hotTrip img{
+    border-radius: 10px;
+}
+
+.TripText{
+    width: 400px;
+    height: 109px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 360px;
+}
+
+.TripText h3{
+    height: 35px;
+    margin: 0;
+    font-size: 29px;
+    @include ForestTitleFont;
+    margin-top: 18px;
+}
+
+.TripText p{
+    height: 24px;
+    margin: 0;
+    font-size: 20px;
+    @include header-font;
+    margin-bottom: 16px;
+}

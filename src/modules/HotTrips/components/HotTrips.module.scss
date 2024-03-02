@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.hotTripsContainer{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotTrips{
+    height: 600px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotTrips h1{
+    color: $black-color;
+    font-size: 42px;
+    @include HotTripsTitle;
+    margin: 50px 0 50px 0;
+}
+
+.HotTripsBlue{
+    @include HotTripsSpan;
+    font-size: 50px;
+    color: $page-color;
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.InformationContainer{
+    display: flex;
+    flex-direction: column;
+    height: 136px;
+}
+
+.InformationContainer p{
+    color: $black-color;
+    font-size: 20px;
+    @include InformationFont;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.InformationContainer{
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      ul li {
+        padding-left: 0;
+        padding-top: 4px;
+        font-size: 17px;
+        color: $gray-color;
+        @include ViewAllFont;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: inherit;
+      }
+}
+
+
+
+

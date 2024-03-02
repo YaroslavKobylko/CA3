@@ -1,0 +1,93 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.Header{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color:$header-color;
+}
+
+.HeaderContainer{
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentContainer{
+    width: 1392px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavContainer{
+    width: 657px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ULContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 657px;
+    height: 24px;
+}
+
+.navLink {
+    position: relative;
+  }
+
+.NavContainer ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.activeNavLink {
+    font-weight: bold;
+  }
+
+  .navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 100%;
+    height: 2px;
+    background-color: $underline-color;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .navLinkContainer{
+    display: flex;
+    justify-content: space-between; // Розміщує елементи рівномірно в контейнері
+    list-style-type: none; // Видаляє маркери списку
+    padding: 0;
+  }
+
+  .navLinkContainer.activeNavLinkContainer .navLink::after {
+    opacity: 1;
+  }
+
+  .headerLogo img{
+    margin-top: 3px;
+  }
+
+  .headerLogo{
+    width: 96px;
+    left: 0;
+  }
+
+.ULContainer li{
+    font-size: 20px;
+    @include header-font;
+    color: $underline-color;
+}

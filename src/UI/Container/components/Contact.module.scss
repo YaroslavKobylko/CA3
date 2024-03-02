@@ -1,0 +1,36 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.Container{
+    width: 225px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SVGContainer{
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: $white-color;
+}
+
+.ContactContainer{
+    width: 225px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactContainer p{
+    font-size: 17px;
+    color: $black-color;
+    margin: 0;
+    @include ViewAllFont;
+}

@@ -1,0 +1,82 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/font_mixins.scss';
+
+.footer{
+    width: auto;
+    height: 473px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $header-color;
+}
+
+.footerContent{
+    width: 1440px;
+    height: 473px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ContactContainer{
+    margin-top: 50px;
+    width: 915px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LineContainer{
+    width: 1200px;
+    height: 1px;
+    background-color: $white-color;
+    margin:46px 0 50px 0;
+}
+
+.InformationContainer{
+    width: 844px;
+    height: 136px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Social{
+    display: flex;
+    flex-direction: column;
+    height: 136px;
+}
+
+.Social p{
+    color: $black-color;
+    font-size: 20px;
+    @include InformationFont;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.Social{
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      ul li {
+        padding-left: 0;
+        padding-top: 4px;
+        font-size: 17px;
+        color: $gray-color;
+        @include ViewAllFont;
+        display: flex;
+        align-items: center;
+      }
+
+      ul li a {
+        margin-left: 4px;
+        text-decoration: none;
+        color: inherit;
+      }
+}
